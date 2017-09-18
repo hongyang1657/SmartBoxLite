@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/asr_txv"
+        android:text="Hello World!"
+        android:textSize="40sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/wkp_count_txv"
+        android:hint="wkp_count"
+        android:layout_below="@+id/asr_txv"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/version_txv"
+        android:hint="version"
+        android:textSize="40sp"/>
+
+    <LinearLayout
+        android:background="#000000"
+        android:orientation="vertical"
+        android:layout_width="360dp"
+        android:layout_height="360dp">
+        <RelativeLayout
+            android:gravity="center"
+            android:background="@drawable/cycler"
+            android:layout_width="360dp"
+            android:layout_height="360dp">
+            <ImageView
+                android:id="@+id/iv_light_1"
+                android:layout_marginLeft="130dp"
+                android:src="@drawable/cycler_shape_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_light_2"
+                android:layout_marginLeft="220dp"
+                android:src="@drawable/cycler_shape_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_light_3"
+                android:layout_alignParentRight="true"
+                android:padding="47dp"
+                android:src="@drawable/cycler_shape_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_light_4"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="130dp"
+                android:src="@drawable/cycler_shape_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_light_5"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="220dp"
+                android:src="@drawable/cycler_shape_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_light_6"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:padding="47dp"
+                android:src="@drawable/cycler_shape_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_light_7"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="220dp"
+                android:src="@drawable/cycler_shape_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_light_8"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="130dp"
+                android:src="@drawable/cycler_shape_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_light_9"
+                android:layout_alignParentBottom="true"
+                android:padding="47dp"
+                android:src="@drawable/cycler_shape_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_light_10"
+                android:layout_marginTop="220dp"
+                android:src="@drawable/cycler_shape_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_light_11"
+                android:layout_marginTop="130dp"
+                android:src="@drawable/cycler_shape_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_light_12"
+                android:padding="47dp"
+                android:src="@drawable/cycler_shape_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bt_1"
+            android:text="开机"
+            android:onClick="click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/bt_2"
+            android:text="唤醒"
+            android:onClick="click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/bt_3"
+            android:text="配置"
+            android:onClick="click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/bt_4"
+            android:text="关机"
+            android:onClick="click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>
