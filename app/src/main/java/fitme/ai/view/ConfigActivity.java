@@ -4,11 +4,12 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
+import com.libra.sinvoice.LogHelper;
+import com.libra.sinvoice.SinVoiceRecognition;
+
 import fitme.ai.MyApplication;
 import fitme.ai.R;
 import fitme.ai.utils.L;
-import fitme.ai.utils.sinvoice.LogHelper;
-import fitme.ai.utils.sinvoice.SinVoiceRecognition;
 
 /**
  * 配置入网

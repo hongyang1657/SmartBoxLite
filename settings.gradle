@@ -1,1 +1,1 @@
-include ':app', 'SinVoiceDemo'
+include ':app', 'SinVoiceDemo', 'sinVoice'

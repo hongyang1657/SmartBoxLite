@@ -38,6 +38,7 @@ dependencies {
     compile files('src/main/jniLibs/libLet.jar')
     compile files('src/main/jniLibs/Msc.jar')
     compile files('src/main/jniLibs/Sunflower.jar')
+    compile project(path: ':SinVoiceDemo')
 }
 
 

@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/SinVoiceDemo/SinVoiceDemo.iml" filepath="$PROJECT_DIR$/SinVoiceDemo/SinVoiceDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/SmartBoxLite.iml" filepath="$PROJECT_DIR$/SmartBoxLite.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sinVoice/sinVoice.iml" filepath="$PROJECT_DIR$/sinVoice/sinVoice.iml" />
     </modules>
   </component>
 </project>
