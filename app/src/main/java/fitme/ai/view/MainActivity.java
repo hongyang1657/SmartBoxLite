@@ -1,4 +1,4 @@
-package fitme.ai;
+package fitme.ai.view;
 
 import android.app.Activity;
 import android.content.Context;
@@ -36,6 +36,9 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 
+import fitme.ai.MyApplication;
+import fitme.ai.R;
+import fitme.ai.Tools;
 import fitme.ai.bean.MessageGet;
 import fitme.ai.bean.Music;
 import fitme.ai.model.BLControlConstants;
@@ -182,7 +185,7 @@ public class MainActivity extends Activity implements IGetYeelight {
         mSaiSDK = new saiAPI_wrap();
         mSaiCallback = new SaiCallback();
         int initCode = mSaiSDK.init_system(0.47, "/sdcard/sai_config", mSaiCallback);
-        int startCode = mSaiSDK.start_service(1, 3500);
+        int startCode = mSaiSDK.start_service(1, 6000);
         Log.d(TAG, "initSaiSDK: " + initCode + "/" + startCode);
         mVersionTxv.setText(mSaiSDK.get_version());
         Log.d(TAG, "initSaiSDK: version = " + mSaiSDK.get_version());
@@ -257,7 +260,7 @@ public class MainActivity extends Activity implements IGetYeelight {
                 super.run();
                 while (timer<12){
                     try {
-                        sleep(500);
+                        sleep(200);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -390,7 +393,7 @@ public class MainActivity extends Activity implements IGetYeelight {
                 //saveData2Local(asr_result, (id + "  " + asr + "\n").getBytes());
 
                 //发送消息请求
-                messageCreat(Mac.getMac(),String.valueOf(1200020190),String.valueOf(302902090),"device_text",asr,"13145");
+                //messageCreat(Mac.getMac(),String.valueOf(1200020190),String.valueOf(302902090),"device_text",asr,"13145");
             } catch (JSONException e) {
                 e.printStackTrace();
             }

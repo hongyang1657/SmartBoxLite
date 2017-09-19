@@ -8,7 +8,7 @@ import android.os.Looper;
 import android.util.Log;
 import android.widget.Toast;
 
-import fitme.ai.MainActivity;
+import fitme.ai.view.MainActivity;
 import fitme.ai.MyApplication;
 
 /**

@@ -4,7 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import fitme.ai.MainActivity;
+import fitme.ai.view.MainActivity;
 import fitme.ai.utils.L;
 
 /**

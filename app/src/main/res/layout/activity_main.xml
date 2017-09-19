@@ -34,7 +34,7 @@
         android:textSize="40sp"/>
 
     <LinearLayout
-        android:background="#000000"
+        android:background="#ffffff"
         android:orientation="vertical"
         android:layout_width="360dp"
         android:layout_height="360dp">
