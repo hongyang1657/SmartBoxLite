@@ -96,8 +96,8 @@ public class MainActivity extends Activity implements IGetYeelight {
 
     private static final String TAG = "hy_debug_message";
 
-    //private static final String result_path = "/sdcard/sai_config/";
-    //private File asr_result = null;
+    private static final String result_path = "/sdcard/sai_config/";
+    private File asr_result = null;
 
     private saiAPI_wrap mSaiSDK;
     private TextView mWkpCountTxv;
