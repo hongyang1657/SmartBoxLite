@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:background="@color/colorGray"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -34,7 +35,6 @@
         android:textSize="40sp"/>
 
     <LinearLayout
-        android:background="#ffffff"
         android:orientation="vertical"
         android:layout_width="360dp"
         android:layout_height="360dp">
@@ -46,34 +46,34 @@
             <ImageView
                 android:id="@+id/iv_light_1"
                 android:layout_marginLeft="130dp"
-                android:src="@drawable/cycler_shape_white"
+                android:src="@drawable/cycler_shape_gray"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <ImageView
                 android:id="@+id/iv_light_2"
                 android:layout_marginLeft="220dp"
-                android:src="@drawable/cycler_shape_white"
+                android:src="@drawable/cycler_shape_gray"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <ImageView
                 android:id="@+id/iv_light_3"
                 android:layout_alignParentRight="true"
                 android:padding="47dp"
-                android:src="@drawable/cycler_shape_white"
+                android:src="@drawable/cycler_shape_gray"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <ImageView
                 android:id="@+id/iv_light_4"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="130dp"
-                android:src="@drawable/cycler_shape_white"
+                android:src="@drawable/cycler_shape_gray"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <ImageView
                 android:id="@+id/iv_light_5"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="220dp"
-                android:src="@drawable/cycler_shape_white"
+                android:src="@drawable/cycler_shape_gray"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <ImageView
@@ -81,46 +81,46 @@
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
                 android:padding="47dp"
-                android:src="@drawable/cycler_shape_white"
+                android:src="@drawable/cycler_shape_gray"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <ImageView
                 android:id="@+id/iv_light_7"
                 android:layout_alignParentBottom="true"
                 android:layout_marginLeft="220dp"
-                android:src="@drawable/cycler_shape_white"
+                android:src="@drawable/cycler_shape_gray"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <ImageView
                 android:id="@+id/iv_light_8"
                 android:layout_alignParentBottom="true"
                 android:layout_marginLeft="130dp"
-                android:src="@drawable/cycler_shape_white"
+                android:src="@drawable/cycler_shape_gray"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <ImageView
                 android:id="@+id/iv_light_9"
                 android:layout_alignParentBottom="true"
                 android:padding="47dp"
-                android:src="@drawable/cycler_shape_white"
+                android:src="@drawable/cycler_shape_gray"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <ImageView
                 android:id="@+id/iv_light_10"
                 android:layout_marginTop="220dp"
-                android:src="@drawable/cycler_shape_white"
+                android:src="@drawable/cycler_shape_gray"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <ImageView
                 android:id="@+id/iv_light_11"
                 android:layout_marginTop="130dp"
-                android:src="@drawable/cycler_shape_white"
+                android:src="@drawable/cycler_shape_gray"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <ImageView
                 android:id="@+id/iv_light_12"
                 android:padding="47dp"
-                android:src="@drawable/cycler_shape_white"
+                android:src="@drawable/cycler_shape_gray"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </RelativeLayout>
@@ -152,6 +152,30 @@
         <Button
             android:id="@+id/bt_4"
             android:text="关机"
+            android:onClick="click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/bt_5"
+            android:text="休眠"
+            android:onClick="click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/bt_6"
+            android:text="静音"
+            android:onClick="click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/bt_7"
+            android:text="音量+"
+            android:onClick="click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/bt_8"
+            android:text="音量—"
             android:onClick="click"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

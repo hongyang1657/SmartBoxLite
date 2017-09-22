@@ -63,7 +63,7 @@ public class MainActivity extends Activity implements IGetYeelight {
     private ImageView ivLight1,ivLight2,ivLight3,ivLight4,ivLight5,ivLight6,ivLight7
             ,ivLight8,ivLight9,ivLight10,ivLight11,ivLight12;
     private List<ImageView> ivLightList = new LinkedList<>();
-    private Button bt1,bt2,bt3,bt4;
+    private Button bt1,bt2,bt3,bt4,bt5,bt6,bt7,bt8;
 
     private static final int TIMER = 1;   //跑马灯计时器
     private static final int CLEAR_ALL = 2;  //熄灭所有灯
@@ -81,7 +81,7 @@ public class MainActivity extends Activity implements IGetYeelight {
                     }
                     break;
                 case CLEAR_ALL:
-                    clearAllLight();
+                    clearAllLightToColor(R.drawable.cycler_shape_blue);
                     break;
                 default:
                     break;
@@ -224,6 +224,10 @@ public class MainActivity extends Activity implements IGetYeelight {
         bt2 = (Button) findViewById(R.id.bt_2);
         bt3 = (Button) findViewById(R.id.bt_3);
         bt4 = (Button) findViewById(R.id.bt_4);
+        bt5 = (Button) findViewById(R.id.bt_5);
+        bt6 = (Button) findViewById(R.id.bt_6);
+        bt7 = (Button) findViewById(R.id.bt_7);
+        bt8 = (Button) findViewById(R.id.bt_8);
     }
 
     /**
@@ -236,8 +240,8 @@ public class MainActivity extends Activity implements IGetYeelight {
                 powerOn();
                 break;
             case R.id.bt_2:
-                wakeUpByAngle(30);
-                handler.sendEmptyMessageDelayed(CLEAR_ALL,3000);
+                /*wakeUpByAngle(30);
+                handler.sendEmptyMessageDelayed(CLEAR_ALL,3000);*/
                 break;
             case R.id.bt_3:
                 break;
@@ -247,6 +251,15 @@ public class MainActivity extends Activity implements IGetYeelight {
                 intent.putExtra("interval", 1);
                 intent.putExtra("window", 0);
                 sendBroadcast(intent);
+                break;
+            case R.id.bt_5:
+                TTSLight();
+                break;
+            case R.id.bt_6:
+                break;
+            case R.id.bt_7:
+                break;
+            case R.id.bt_8:
                 break;
             default:
                 break;
@@ -312,10 +325,10 @@ public class MainActivity extends Activity implements IGetYeelight {
         }
     }
 
-    //熄灭所有灯
-    private void clearAllLight(){
+    //所有灯变成一个颜色
+    private void clearAllLightToColor(int resColorId){
         for (int i=0;i<ivLightList.size();i++){
-            ivLightList.get(i).setImageResource(R.drawable.cycler_shape_white);
+            ivLightList.get(i).setImageResource(resColorId);
         }
     }
 
@@ -323,12 +336,36 @@ public class MainActivity extends Activity implements IGetYeelight {
     private void lightUp(int index){
         for (int i=0;i<ivLightList.size();i++){
             if (index==i+1){
-                ivLightList.get(i).setImageResource(R.drawable.cycler_shape_blue);
-            }else{
                 ivLightList.get(i).setImageResource(R.drawable.cycler_shape_white);
+            }else{
+                ivLightList.get(i).setImageResource(R.drawable.cycler_shape_blue);
             }
 
         }
+    }
+
+    //说话时候的灯光效果
+    private void TTSLight(){
+        new Thread(){
+            @Override
+            public void run() {
+                super.run();
+                try {
+                    L.i("dooooooooooooooooooooooooo1");
+                    sleep(3000);
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            L.i("dooooooooooooooooooooooooo2");
+                        }
+                    });
+
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }.start();
+
     }
 
 
